@@ -4,200 +4,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Budget</title>
+    <meta name="description" content="A free personal budger app">
+    <meta name="keywords" content="app free budget finance">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
-    <div class="menu">
-        
+<a href="#main" class="skip">Skip to content</a>
+
+    <nav>
         <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/public/about.html">About</a></li>
-            <li><a href="/public/login.html">Login</a></li>
-            <li><a href="https://google.com" >Google</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/login.html">Login</a></li>
+            <li><a href="https://google.com">Google</a></li>
         </ul>
-    </div>
+    </nav>
 
     <div class="hero">
-        <!-- This is an SEO Change -->
-        <!-- I added keywords to the header1 to increase searches for "college students" and "finance" -->
-        <h1>Personal Finance Budget for College Students</h1>
+        <h1>Personal Budget</h1>
         <h2>A personal-budget management app</h2>
     </div>
 
-    <div class="container center">
+    <main class="center" id="main">
 
         <div class="page-area">
 
-            
-                <div class="text-box">
-                    <h1>Stay on track</h1>
-                    <p>
-                        Do you know where you are spending your money? If you really stop to track it down,
-                        you would get surprised! Proper budget management depends on real data... and this
-                        app will help you with that!
-                    </p>
-                </div>
-    
-            <div class="text-box">
-                <h1>Alerts</h1>
-                <p>
-                    What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
-                </p>
-            </div>
-    
-            <div class="text-box">
-                <h1>Results</h1>
-                <p>
-                    People who stick to a financial plan, budgeting every expense, get out of debt faster!
-                    Also, they to live happier lives... since they expend without guilt or fear... 
-                    because they know it is all good and accounted for.
-                </p>
-            </div>
-    
-            <div class="text-box">
-                <h1>Free</h1>
-                <p>
-                    This app is free!!! And you are the only one holding your data!
-                </p>
-            </div>
-    
-            <div class="text-box">
+            <article>
                 <h1>Stay on track</h1>
                 <p>
                     Do you know where you are spending your money? If you really stop to track it down,
                     you would get surprised! Proper budget management depends on real data... and this
                     app will help you with that!
                 </p>
-            </div>
+            </article>
     
-            <div class="text-box">
+            <article>
                 <h1>Alerts</h1>
                 <p>
                     What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
                 </p>
-            </div>
+            </article>
     
-            <div class="text-box">
+            <article>
                 <h1>Results</h1>
                 <p>
                     People who stick to a financial plan, budgeting every expense, get out of debt faster!
                     Also, they to live happier lives... since they expend without guilt or fear... 
                     because they know it is all good and accounted for.
                 </p>
-            </div>
+            </article>
     
-            <div class="text-box">
+            <article>
                 <h1>Free</h1>
+                <p>
+                    This app is free!!! And you are the only one holding your data!
+                </p>
+            </article>
+    
+            <article>
+                <h1>Stay on track</h1>
+                <p>
+                    Do you know where you are spending your money? If you really stop to track it down,
+                    you would get surprised! Proper budget management depends on real data... and this
+                    app will help you with that!
+                </p>
+            </article>
+    
+            <article>
+                <h1>Alerts</h1>
+                <p>
+                    What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
+                </p>
+            </article>
+    
+            <article>
+                <h1>Results</h1>
+                <p>
+                    People who stick to a financial plan, budgeting every expense, get out of debt faster!
+                    Also, they to live happier lives... since they expend without guilt or fear... 
+                    because they know it is all good and accounted for.
+                </p>
+            </article>
+    
+            <article>
+                <h1>Chart</h1>
                 <p>
                     <canvas id="myChart" width="400" height="400"></canvas>
                 </p>
-            </div>
+            </article>
 
         </div>
 
-        <!-- This is a Semantic HTML Change -->
-        <section>
-            Always double check your budget plans!
+    </main>
 
-            <!-- This is an A11y Change -->
-            <!-- The button's CSS is above 44px as per canvas video -->
-            <button type="button">Click Me! I do nothing!</button>
-        </section>
-
-    </div>
-
-    <div class="bottom">
+    <footer class="bottom">
         <div class="center">
             All rights reserved &copy; Fabio Nolasco
         </div>
-    </div>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
-   <!-- <script>
-        var dataSource = {
-            datasets: [
-                {
-                    data: [30, 350, 90],
-                    backgroundColor: [
-                        '#ffcd56',
-                        '#ff6384',
-                        '#36a2eb',
-                        '#fd6b19'
-                    ],
-                }
-            ],
-            labels: [
-                'Eat out',
-                'Rent',
-                'Groceries'
-            ]
-        };
 
-        function createChart() {
-            var ctx = document.getElementById("myChart").getContext("2d");
-            var myPieChart = new Chart(ctx, {
-                type: 'pie',
-                data: dataSource
-            });
-        }
-
-        function getBudget() {
-            axios.get('/budget')
-            .then(function (res) {
-                console.log(res);
-                for (var i = 0; i < res.data.myBudget.length; i++) {
-                    dataSource.datasets[0].data[i] = res.data.myBudget[i].budget;
-                    dataSource.labels[i] = res.data.myBudget[i].title;
-                }
-                createChart();
-            });
-        }
-        getBudget();
-    </script>-->
     <script>
         var dataSource = {
-            datasets: [
-                {
-                    data: [],
-                    backgroundColor: [
-                        '#ffcd56',
-                        '#ff6384',
-                        '#36a2eb',
-                        '#aa7b19',
-                        '#fffb19',
-                        '#bbab19',
-                        '#dd6b19'
-                    ],
-                }
-            ],
-            labels: [
-                
-            ]
-        };
+                datasets: [
+                    {
+                        data: [],
+                        backgroundColor: 
+                        [  ]
+                    }
+                ],
+                labels: []
+            };
 
         function createChart() {
-            var ctx = document.getElementById("myChart").getContext("2d");
+            var ctx = document.getElementById('myChart').getContext('2d');
             var myPieChart = new Chart(ctx, {
                 type: 'pie',
                 data: dataSource
             });
         }
 
-        // data.budget.myBudget[0].budget
         function getBudget() {
-            axios.get('/budget')
+            axios.get('http://localhost:3000/budget')
             .then(function (res) {
-                console.log(res);
-                for (var i = 0; i < res.data.budget.myBudget.length; i++) {
-                    dataSource.datasets[0].data[i] = res.data.budget.myBudget[i].budget;
-                    dataSource.labels[i] = res.data.budget.myBudget[i].title;
+                for (var i = 0; i < res.data.length; i++) 
+                {
+                    dataSource.labels[i] = res.data[i].title;
+                    dataSource.datasets[0].data[i] = res.data[i].budget;
+                    dataSource.datasets[0].backgroundColor[i] = res.data[i].color;
+                    createChart();
                 }
-                createChart();
             });
         }
+
         getBudget();
     </script>
 
